@@ -30,25 +30,7 @@ app.use(cors());
 // 开放静态资源路径
 app.use(express.static("./public"));
 
-// //网络数据库
-// hm.connect({
-//     host: '39.105.231.106',//数据库地址
-//     // host: '127.0.0.1',
-//     port:'3306',
-//     user: 'root',//用户名，没有可不填
-//     password: '091816',//密码，没有可不填
-//     database: 'mushroom'//数据库名称
-// });
 
-//网络数据库2
-const connection = hm.connect({
-  host: "mysql.sqlpub.com", //数据库地址
-  // host: '127.0.0.1',
-  port: "3306",
-  user: "qqmysql", //用户名，没有可不填
-  password: "914b7f45579894e1", //密码，没有可不填
-  database: "mushroom", //数据库名称
-});
 
 // //本地数据库
 // hm.connect({
